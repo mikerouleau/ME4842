@@ -1,7 +1,7 @@
 %Template and commentary by Michael Rouleau: https://github.com/mikerouleau/ME4842.git
 %Text primarily from Dr. Stutts' Systems Laboratory Manual
 
-%----This template includes equation labels and numbering BELOW the equation----%
+%----This template includes equation captions and numbering BELOW the equation----%
 
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc} %tells LaTeX that source is UTF-8 encoded
@@ -36,7 +36,7 @@
 %nontraditional usage of author to meet formatting requirements
 \title{\Huge A Systems Lab Memo}
 \author{Section \#, Group \#: \\
-  Group Member 1 \quad Group Member 2 \quad Group Member 3 \quad Group Member 4 \\ GTA: Blaine Allen \\\\ Prepared By: \\ Michael Rouleau}
+  Group Member 1 \quad Group Member 2 \quad Group Member 3 \quad Group Member 4 \\ GTA: Blaine Allen \\\\ Prepared By: \\ Michael Rouleau\thanks{Nearly all of this infromation is from the course manual\cite{Stutts}; I simply formatted it.}}
 \date{\today}
 
 \begin{document}
@@ -78,7 +78,7 @@ Here, you will explain the data you took, and any calculations that you made. Th
 2004  & 547  & 9.9     \\ \hline
 2005  & 622  & 10.2    \\ \hline
 2006  & 655  & 10.5    \\ \hline
-2007  & 701  & 11.0      \\ \hline
+2007  & 701  & 11.0    \\ \hline
 2008  & 712  & 10.6    \\ \hline
 2009  & 708  & 10.6    \\ \hline
 \end{tabular}
@@ -95,7 +95,7 @@ Here, you will explain the data you took, and any calculations that you made. Th
   \item You should be mindful of the number of significant digits you use in your results.
   \item Use consistent units and suitable unit prefixes.
   \item When referring to equations, figures, tables, and appendices in your memo you must always capitalize E in equation F in figure, T in table, and A in appendix.
-  \item To reference an equation from the manual don't say "according to Equation 8.25 in the manual". The correct way to do this is: ”according to Equation 2[1]”. Note Equation 2 is an equation in your memo and has its own number and [1] is the citation in your reference section citing the lab manual.
+  \item To reference an equation from the manual don't say "according to Equation 8.25 in the manual". The correct way to do this is: "according to Equation 2[1]”. Note Equation 2 is an equation in your memo and has its own number and [1] is the citation in your reference section citing the lab manual.
   \item Table, figure, and equation titles: Tables get titles on top. Figures and equations get the title on the bottom.
   \item Tables, figures and equations must be part of the written text. That is you should put your table, figure, and equation right below the paragraph where they are first mentioned.
   \item Only include necessary data in tables that are related to the analysis of the experiment.
@@ -108,7 +108,7 @@ In this section, simply answer each question from the lab manual in order. It ma
 \begin{equation*}
 x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
 \end{equation*}
-\caption{Quadratic Formula}\label{Quadratic}
+\caption{The Quadratic Formula}\label{Quadratic}
 \end{eqfloat}
 	
 \begin{eqfloat}
@@ -134,7 +134,7 @@ Conclusions should clearly state how well the objective was met, any errors that
 \begin{thebibliography}{3} %{3} is the number of entries to be added. The maximum value is 99.
 
 \bibitem{Herbert}
-  Herbert, Susan.,\emph{Robert Cheseman (Holbein).}
+  Herbert, S.,\emph{Robert Cheseman (Holbein).}
   Chris Beetles Gallery, London, England, www.chrisbeetles.com/gallery/animals/cats/robert-cheseman-holbein.html. Accessed 8 Nov. 2018.
   
 \bibitem{Stutts}
@@ -142,7 +142,7 @@ Conclusions should clearly state how well the objective was met, any errors that
   Department of Mechanical and Aerospace Engineering, Missouri University of Science and Technology, 3 Oct. 2018. 130-131.
   
 \bibitem{Vigen}
-  Vigen, Tyler., \emph{15 Insane Things That Correlate With Each Other.}
+  Vigen, T., \emph{15 Insane Things That Correlate With Each Other.}
   Spurious Correlations, tylervigen.com/spurious-correlations. Accessed 8 Nov. 2018.
 
 \end{thebibliography}

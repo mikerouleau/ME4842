@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.24)  9 NOV 2018 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.24)  9 NOV 2018 23:06
 entering extended mode
 **./Memo-Template.tex
 (Memo-Template.tex
@@ -298,19 +298,29 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 (F:\Tex\MikTex\texmfs\install\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
+
+(F:\Tex\MikTex\texmfs\install\tex\latex\base\omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+ [1
 
 {F:/Tex/MikTex/texmfs/data/pdftex/config/pdftex.map}]
-<"ROBERT-CHESEMAN-HOLBEIN-1-c28184".jpg, id=8, 803.0pt x 794.97pt>
+<"ROBERT-CHESEMAN-HOLBEIN-1-c28184".jpg, id=11, 803.0pt x 794.97pt>
 File: "ROBERT-CHESEMAN-HOLBEIN-1-c28184".jpg Graphic file (type jpg)
 <use "ROBERT-CHESEMAN-HOLBEIN-1-c28184".jpg>
 Package pdftex.def Info: "ROBERT-CHESEMAN-HOLBEIN-1-c28184".jpg  used on input 
 line 90.
 (pdftex.def)             Requested size: 321.1943pt x 317.98236pt.
  [2 <./ROBERT-CHESEMAN-HOLBEIN-1-c28184.jpg>]
-Underfull \hbox (badness 2005) in paragraph at lines 137--139
-[]\OT1/cmr/m/n/10.95 Herbert, Su-san.,\OT1/cmr/m/it/10.95 Robert Chese-man (Hol
--bein). \OT1/cmr/m/n/10.95 Chris Bee-tles Gallery, Lon-don, Eng-land,
+Underfull \hbox (badness 6978) in paragraph at lines 137--139
+[]\OT1/cmr/m/n/10.95 Herbert, S.,\OT1/cmr/m/it/10.95 Robert Chese-man (Hol-bein
+). \OT1/cmr/m/n/10.95 Chris Bee-tles Gallery, Lon-don, Eng-land,
  []
 
 
@@ -321,13 +331,13 @@ lbein.html. Ac-cessed 8 Nov.
 
 [3] [4] (Memo-Template.aux) ) 
 Here is how much of TeX's memory you used:
- 4055 strings out of 492970
- 59780 string characters out of 3135485
- 126285 words of memory out of 3000000
- 7872 multiletter control sequences out of 15000+200000
- 11690 words of font info for 44 fonts, out of 3000000 for 9000
+ 4088 strings out of 492970
+ 60234 string characters out of 3135485
+ 126377 words of memory out of 3000000
+ 7896 multiletter control sequences out of 15000+200000
+ 13880 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,39p,536b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,39p,536b,322s stack positions out of 5000i,500n,10000p,200000b,50000s
 <F:/Tex/MikTex/texmfs/install/fonts/type1/public/a
 msfonts/cm/cmbx10.pfb><F:/Tex/MikTex/texmfs/install/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><F:/Tex/MikTex/texmfs/install/fonts/type1/public/amsfonts/cm/cme
@@ -337,12 +347,14 @@ x10.pfb><F:/Tex/MikTex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><F:/Tex/MikTex/texmfs/i
 nstall/fonts/type1/public/amsfonts/cm/cmr17.pfb><F:/Tex/MikTex/texmfs/install/f
 onts/type1/public/amsfonts/cm/cmr8.pfb><F:/Tex/MikTex/texmfs/install/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><F:/Tex/MikTex/texmfs/install/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb><F:/Tex/MikTex/texmfs/install/fonts/type1/public/amsfo
-nts/symbols/msbm10.pfb>
-Output written on Memo-Template.pdf (4 pages, 341621 bytes).
+1/public/amsfonts/cm/cmr9.pfb><F:/Tex/MikTex/texmfs/install/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><F:/Tex/MikTex/texmfs/install/fonts/type1/public/amsfont
+s/cm/cmsy6.pfb><F:/Tex/MikTex/texmfs/install/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><F:/Tex/MikTex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+<F:/Tex/MikTex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Memo-Template.pdf (4 pages, 370066 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
