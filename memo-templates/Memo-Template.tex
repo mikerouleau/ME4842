@@ -1,56 +1,31 @@
 %Template and commentary by Michael Rouleau: https://github.com/mikerouleau/ME4842.git
-%Text primarily from Dr. Stutts' Systems Laboratory Manual
+%Text primarily from Dr. Stutts' Systems Laboratory Manual /ref{Stutts}
+%Last Updated: Feb 15, 2019
 
 %----This template includes equation captions and numbering BELOW the equation----%
 
-\documentclass[11pt,a4paper]{article}
-\usepackage[utf8]{inputenc} %tells LaTeX that source is UTF-8 encoded
-\usepackage[legalpaper, margin=1in]{geometry} %make margins 1"
-\usepackage[justification=centering]{caption} %center all captions by default
-\usepackage{amsmath} %advanced math extensions
-\usepackage{amsfonts} %extended math fonts
-\usepackage{amssymb} %extended symbol libraries
-\usepackage{graphicx} %enhanced graphic handling
+\documentclass[11pt,letter]{report}
+\usepackage[margin=1in]{geometry} %make margins 1"
+\usepackage[justification=centering, format=plain,
+font=it, margin=1in]{caption} %all captions centered and made italics by default
+\usepackage{amsmath, amssymb} %advanced math extensions
+\usepackage{graphicx} %enhanced graphics handling/management
 \usepackage{float} %create floating containers
-\usepackage{aliascnt} %alias the counter
+\usepackage{aliascnt} %alias counters as needed
 
-%make captions in italics by default
-\usepackage[format=plain,
-            font=it]{caption}
-            
-%make equations floating objects - needed for formatting requirements
-\newaliascnt{eqfloat}{equation}
-\newfloat{eqfloat}{ht}{eqflts}
-\floatname{eqfloat}{Equation}
-\newcounter{eqcount}
-\newcommand*{\ORGeqfloat}{}
-\let\ORGeqfloat\eqfloat
-\def\eqfloat{
-  \let\ORIGINALcaption\caption
-  \def\caption{
-    \ORIGINALcaption
-  }
-  \ORGeqfloat
-}         
-            
+%make equations floating objects and alias counter - needed for formatting requirements
+\newaliascnt{eqfloat}{equation} %make the counter alias eqfloat
+\newfloat{eqfloat}{!htb}{eqflts} %make the float container for equations
+\floatname{eqfloat}{Equation} %change name so captions read "Equation" X:
+        
 %nontraditional usage of author to meet formatting requirements
-\title{\Huge A Systems Lab Memo}
+\title{\Huge{A Systems Lab Memo}}
 \author{Section \#, Group \#: \\
-  Group Member 1 \quad Group Member 2 \quad Group Member 3 \quad Group Member 4 \\ GTA: Blaine Allen \\\\ Prepared By: \\ Michael Rouleau\thanks{Nearly all of this infromation is from the course manual\cite{Stutts}; I simply formatted it.}}
+  Group Member 1 \quad Group Member 2 \quad Group Member 3 \quad Group Member 4 \\ GTA: Blaine Allen \\\\ Prepared By: \\ Michael Rouleau\thanks{Nearly all of this information is from the course manual\cite{Stutts}; I simply formatted it.}}
 \date{\today}
 
 \begin{document}
-
-%make title page w/ proper formatting
-\null  % Empty line
-\nointerlineskip  % No skip for prev line
-\vfill
-\let\snewpage \newpage
-\let\newpage \relax
 \maketitle
-\let \newpage \snewpage
-\vfill 
-\break % page break
 
 \section*{Abstract}
 The Abstract should be approximately 100-150 words in length. This may be a very strict limit in some cases. For ME4842, the limit will be somewhat flexible. This should include what the objective of the experiment was and its importance, any theory the experiment is based on, major findings and trends found in your results, and a brief summary of your interpretations and conclusions. You should not reference anything in the abstract; this section should be completely independent from the rest of the report.
@@ -59,18 +34,26 @@ The Abstract should be approximately 100-150 words in length. This may be a very
 Here, you will briefly explain what steps you followed in conducting the experiment. The procedure should state what is not covered in the lab manual and what decisions you made in order to accomplish the experiment. It may be handy to organize this section as a list.
 
 \section*{Results}
-Here, you will explain the data you took, and any calculations that you made. This section should be the longest in the report. Many results can be displayed using objects similar to  Table~\ref{table:Civil Cheese} and Figure~\ref{fig:Cat Lord}, displayed below.
+Here, you will explain the data you took, and any calculations that you made. This section should be the longest in the report. Many results can be displayed using objects similar to Table~\ref{table:Civil Cheese} and Figure~\ref{fig:Cat Lord}, displayed below.
 
 %Tools such as those at https://www.tablesgenerator.com/ may be useful for creating tables quickly.
 
 %example table formatting
 \begin{table}[!htb]
-\caption{Annual Per Capita Consumption of Mozzarella Cheese\\ and Civil Engineering Doctorates Awarded \cite{Vigen}} %\cite{name} refers to a specific bibliography entry.
+\caption{ Annual Per Capita Consumption of Mozzarella Cheese and Civil Engineering Doctorates Awarded \cite{Vigen}}%\cite{name} refers to a specific bibliography entry.
 \label{table:Civil Cheese} %use this label to refer to the object elsewhere, as shown in the previous paragraph.
 \centering
-\begin{tabular}{|c|c|c|}
-\hline
-\textbf{Year} & \textbf{\begin{tabular}[c]{@{}c@{}}Civil Engineering\\ Doctorates\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Mozzarella\\ Cheese Consumption\end{tabular}} \\ \hline
+	\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{Year} & 
+	\textbf{\begin{tabular}[c]{@{}c@{}}
+			Civil Engineering\\ 
+			Doctorates\end{tabular}} &
+	\textbf{\begin{tabular}[c]{@{}c@{}}
+			Mozzarella\\
+			Cheese Consumption
+	\end{tabular}} \\ \hline
+
 2000  & 480  & 9.3     \\ \hline
 2001  & 501  & 9.7     \\ \hline
 2002  & 540  & 9.7     \\ \hline
@@ -86,16 +69,17 @@ Here, you will explain the data you took, and any calculations that you made. Th
 
 %example figure formatting
 \begin{figure}[!htb]
+\label{fig:Cat Lord}
 \centering
-\includegraphics[scale=0.4]{"ROBERT-CHESEMAN-HOLBEIN-1-c28184".jpg}%include full file path unless source file is in the same directory.
-\caption{Robert Cheseman (Holbein)\cite{Herbert}}\label{fig:Cat Lord}
+\includegraphics[scale=0.4]{cat-painting}%include full file path unless source file is in the same directory.
+\caption{Robert Cheseman (Holbein)\cite{Herbert}}
 \end{figure}
 
-\begin{enumerate} %start list
+\begin{enumerate} %start numbered list
   \item You should be mindful of the number of significant digits you use in your results.
   \item Use consistent units and suitable unit prefixes.
   \item When referring to equations, figures, tables, and appendices in your memo you must always capitalize E in equation F in figure, T in table, and A in appendix.
-  \item To reference an equation from the manual don't say "according to Equation 8.25 in the manual". The correct way to do this is: "according to Equation 2[1]”. Note Equation 2 is an equation in your memo and has its own number and [1] is the citation in your reference section citing the lab manual.
+  \item To reference an equation from the manual don't say "according to Equation 8.25 in the manual". The correct way to do this is: "according to Equation 2 [X]”. Note Equation 2 is an equation in your memo and has its own number and [X] is the citation number in your reference section corresponding to the appropriate source.
   \item Table, figure, and equation titles: Tables get titles on top. Figures and equations get the title on the bottom.
   \item Tables, figures and equations must be part of the written text. That is you should put your table, figure, and equation right below the paragraph where they are first mentioned.
   \item Only include necessary data in tables that are related to the analysis of the experiment.
