@@ -1,8 +1,7 @@
-%Template and commentary by Michael Rouleau: https://github.com/mikerouleau/ME4842.git
+%Template and commentary by Michael Rouleau
+%Current Version is at https://github.com/mikerouleau/ME4842.git
 %Text primarily from Dr. Stutts' Systems Laboratory Manual /ref{Stutts}
-%Last Updated: Feb 15, 2019
-
-%----This template includes equation captions and numbering BELOW the equation----%
+%Last Updated: Feb 18, 2019
 
 \documentclass[11pt,letter]{report}
 \usepackage[margin=1in]{geometry} %make margins 1"
@@ -19,7 +18,7 @@ font=it, margin=1in]{caption} %all captions centered and made italics by default
 \floatname{eqfloat}{Equation} %change name so captions read "Equation" X:
         
 %nontraditional usage of author to meet formatting requirements
-\title{\Huge{Systems Lab \LaTeX\  Long Report Template}}
+\title{\Huge{Systems Lab \LaTeX\  Long Report Template}\footnote{Almost all of this text is from Dr. Stutt's Lab Manual \cite{Stutts}}}
 \author{Section \#, Group \#: \\
 	Group Member 1 \footnote{Missouri University of Science and Technology, Rolla, Missouri 65409} 
 	\quad Group Member 2\footnotemark[1]
@@ -38,7 +37,7 @@ The Abstract should be approximately 100-150 words in length. This may be a very
 
 \section*{Introduction}
 This section is basically a more detailed Abstract. Provide the rational for performing the experiment. Explain what was done and why it was done. It may include
-	\begin{enumerate}
+	\begin{enumerate} %starts a list
 		\item Rational - why they did the study in the first place.
 		\item Explanation of what the study is in general technical terms that practitioners in this area would understand.
 		\item Overview of how the study was conducted, and the general results.
@@ -106,6 +105,7 @@ Also keep in mind:
 \section*{Discussion Questions}
 In this section, simply answer each question from the lab manual in order. It may be wise to number your responses. Some responses require equations - number your equations in the order they appear. Equation~\ref{Quadratic} displays the proper formatting; Equation~\ref{eq:Dirac} is a more complex example with a more traditional numbering scheme.
 
+%this equation has a caption BELOW it
 \begin{eqfloat}[!htb]
 	\begin{equation*}
 		x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
@@ -114,6 +114,7 @@ In this section, simply answer each question from the lab manual in order. It ma
 \label{Quadratic}
 \end{eqfloat}
 	
+%this equation has no caption - the number is right-justified
 \begin{equation}
 	\label{eq:Dirac}
 	\left (
