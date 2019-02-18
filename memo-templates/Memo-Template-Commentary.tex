@@ -235,7 +235,7 @@
 	Armed with this information, lines 16-22 should be easy to figure out. However, if you find tables confusing, you're in luck! For small data sets, there are several online tools to automatically generate \LaTeX{} tables. One such tool is located at \url{https://www.tablesgenerator.com/}. Some \LaTeX{} editors also include table-building functionality.
 	
 	\subsection{Figures} \label{subsect:fig}
-	Figure insertion is a comparatively trivial process using the \verb|graphicx| package. Simply by looking at the code below, most of it should be easily understood.
+	Figure insertion is a comparatively trivial process using the \verb|graphicx| package. Simply by looking at the code below, most of it should be easily understood. The code can be slightly more complex when using subfigures, but the implementation is very similar to nesting tables.
 	\begin{lstlisting}[numbers=left,xleftmargin=5mm]
 \begin{figure}[!htb]
 	\label{fig:Cat Lord}
@@ -251,7 +251,27 @@
 	
 	Finally, we have a caption, complete with citation. With this template, each figure is automatically numbered as long as a caption exists - no need to keep track of figure numbers! For more information on citations, refer to Section \ref{sect:ref}.
 	
-	\pagebreak
+	A more complex example, which includes 2 subfigures, appears as
+\begin{lstlisting}
+\begin{figure}[!htb]
+	\centering
+	\begin{subfigure}[H]
+		\centering
+		\includegraphics{subfigure1}
+		\caption{Favorite Subfigure}
+		\label{subfig:Favorite}
+	\end{subfigure}
+	\begin{subfigure}[H]
+		\centering
+		\includegraphics{subfigure2}
+		\caption{Spaghetti}
+		\label{subfig:Pasta}
+	\end{subfigure}
+	\caption{My Favorite Figure with Pasta}
+	\label{fig:Favorite Pasta}
+\end{figure}
+\end{lstlisting}
+	
 	\subsection{Lists} \label{subsect:lists}
 	A list is a convenient way to format the procedure section of a lab report. For most situations, a numbered list will suffice, taking the form of
 	\begin{lstlisting}[numbers=left,xleftmargin=5mm]
